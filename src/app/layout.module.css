@@ -5,7 +5,23 @@
   width: 100dvw;
   height: 100dvh;
 }
-.header {
+.headerwrapper {
+  width: 1224px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.headertop {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+.headerbottom ul {
+  display: flex;
+  flex-direction: row;
+}
+.headerbottom li {
+  list-style: none;
 }

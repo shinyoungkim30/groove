@@ -1,3 +1,5 @@
+import styles from './Main.module.css'
+
 export default function Main() {
-  return '메인 페이지';
+  return <div className={styles.container}>메인페이지</div>;
 }
