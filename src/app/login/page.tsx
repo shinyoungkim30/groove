@@ -1,5 +1,12 @@
-import LoginModal from '../_component/LoginModal';
+'use client';
+
+import { useRouter } from 'next/navigation';
+import Main from '../_component/Main';
 
 export default function Page() {
-  return <LoginModal />;
+  const router = useRouter();
+
+  router.replace('/login');
+
+  return <Main />;
 }
