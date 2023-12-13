@@ -22,15 +22,15 @@ export default function RootLayout({ children, modal }: Props) {
     <html lang="en">
       <body className={inter.className}>
         <div className={styles.container}>
-          <header className={styles.headerwrapper}>
-            <div className={styles.headertop}>
+          <header className={styles.headerWrapper}>
+            <div className={styles.headerTop}>
               <Link href="/">
                 <h1>GROOVE</h1>
               </Link>
               <input />
-              <button>로그인</button>
+              <Link href="/login">로그인</Link>
             </div>
-            <div className={styles.headerbottom}>
+            <div className={styles.headerBottom}>
               <nav>
                 <ul>
                   <li>커뮤니티</li>
@@ -40,8 +40,10 @@ export default function RootLayout({ children, modal }: Props) {
             </div>
           </header>
           <hr />
-          {children}
-          {modal}
+          <div className={styles.mainWrapper}>
+            {children}
+            {modal}
+          </div>
         </div>
       </body>
     </html>

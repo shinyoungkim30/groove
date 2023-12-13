@@ -5,7 +5,7 @@
   width: 100dvw;
   height: 100dvh;
 }
-.headerwrapper {
+.headerWrapper {
   width: 1224px;
   display: flex;
   flex-direction: column;
@@ -13,15 +13,20 @@
   margin-left: auto;
   margin-right: auto;
 }
-.headertop {
+.headerTop {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.headerbottom ul {
+.headerBottom ul {
   display: flex;
   flex-direction: row;
 }
-.headerbottom li {
+.headerBottom li {
   list-style: none;
+}
+.mainWrapper {
+  width: 1224px;
+  margin-left: auto;
+  margin-right: auto;
 }
