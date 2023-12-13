@@ -22,10 +22,43 @@ export default function RootLayout({ children, modal }: Props) {
     <html lang="en">
       <body className={inter.className}>
         <div className={styles.container}>
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <hr />
+          <div>
+            <div className={styles.emptyDiv}></div>
+            <div className={styles.logoWrapper}>
+              <div className={styles.logoDiv}>
+                <Link href="/">
+                  <h2>GROOVE</h2>
+                </Link>
+                <div className={styles.searchInput}>
+                  <input type="text" placeholder="검색어를 입력하세요." />
+                  <div className={styles.searchButton}>
+                    <button>
+                      <svg
+                        width="17"
+                        height="17"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.0271 13.8478L18.5963 17.4162L17.4171 18.5953L13.8488 15.0262C12.5211 16.0905 10.8696 16.6694 9.16797 16.667C5.02797 16.667 1.66797 13.307 1.66797 9.16699C1.66797 5.02699 5.02797 1.66699 9.16797 1.66699C13.308 1.66699 16.668 5.02699 16.668 9.16699C16.6704 10.8687 16.0915 12.5201 15.0271 13.8478ZM13.3555 13.2295C14.4131 12.1419 15.0037 10.684 15.0013 9.16699C15.0013 5.94366 12.3905 3.33366 9.16797 3.33366C5.94464 3.33366 3.33464 5.94366 3.33464 9.16699C3.33464 12.3895 5.94464 15.0003 9.16797 15.0003C10.685 15.0027 12.1429 14.4121 13.2305 13.3545L13.3555 13.2295Z"
+                          fill="#333333"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div className={styles.loginButton}>
+                  <button>로그인</button>
+                </div>
+              </div>
+            </div>
+            <div className={styles.navMenu}>
+              <Link href="/community">커뮤니티</Link>
+              <Link href="/recruit">구인구직</Link>
+            </div>
+            <hr />
+          </div>
           {children}
           {modal}
         </div>
