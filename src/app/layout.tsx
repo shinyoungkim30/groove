@@ -23,7 +23,9 @@ export default function RootLayout({ children, modal }: Props) {
       <body className={inter.className}>
         <div className={styles.container}>
           <div>
-            <div className={styles.emptyDiv}></div>
+            <div className={styles.emptyDivPadding}>
+              <div className={styles.emptyDiv}></div>
+            </div>
             <div className={styles.logoWrapper}>
               <div className={styles.logoDiv}>
                 <Link href="/">
@@ -49,17 +51,19 @@ export default function RootLayout({ children, modal }: Props) {
                   </div>
                 </div>
                 <div className={styles.loginButton}>
-                  <button>로그인</button>
+                  <button>로그인/회원가입</button>
                 </div>
               </div>
             </div>
-            <div className={styles.navMenu}>
-              <Link href="/community">커뮤니티</Link>
-              <Link href="/recruit">구인구직</Link>
+            <div className={styles.navMenuPadding}>
+              <div className={styles.navMenu}>
+                <Link href="/community">커뮤니티</Link>
+                <Link href="/recruit">구인구직</Link>
+              </div>
             </div>
             <hr />
           </div>
-          {children}
+          <div className={styles.mainContainer}>{children}</div>
           {modal}
         </div>
       </body>

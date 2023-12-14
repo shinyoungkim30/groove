@@ -1,2 +1,18 @@
 .container {
+  padding: 4rem 0;
+  max-width: 1224px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+.left {
+  flex-shrink: 0;
+  max-width: 264px;
+  background-color: aqua;
+}
+.leftTempDiv {
+  padding: 1.5rem;
+  border-width: 1px;
+  border-radius: 0.75rem;
+  width: 264px;
 }

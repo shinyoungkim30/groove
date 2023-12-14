@@ -3,13 +3,11 @@
   flex-direction: column;
   min-height: 100%;
 }
-.emptyDiv, .logoWrapper, .navMenu {
-  max-width: 1224px;
-  margin: 0 auto;
-}
-.emptyDiv {
+.emptyDivPadding {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+.emptyDiv {
   height: 2.75rem;
 }
 .logoWrapper {
@@ -65,8 +63,10 @@
   height: 2.25rem;
   cursor: pointer;
 }
-.navMenu {
+.navMenuPadding {
   padding: 0 1rem;
+}
+.navMenu {
   height: 4rem;
   display: flex;
   align-items: center;
@@ -76,7 +76,15 @@
   font-weight: 500;
   font-size: 1.125rem;
 }
+.emptyDiv, .logoDiv, .navMenu {
+  max-width: 1224px;
+  margin: 0 auto;
+}
 .container hr {
   border-top-width: 0;
   border-bottom-width: 2px;
+}
+.mainContainer {
+  padding: 0 1rem;
+  height: 100%;
 }
