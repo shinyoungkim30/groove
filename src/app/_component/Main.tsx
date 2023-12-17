@@ -7,10 +7,10 @@ import Post from './Post';
 export default function Main() {
   return (
     <div className={styles.container}>
-      <aside className={styles.left}>
-        <div className={styles.leftTempDiv}><h4>인기글</h4></div>
-      </aside>
-      <section>
+      {/* <h4>인기글</h4> */}
+      {/* <aside className={styles.left}>
+        <div className={styles.leftTempDiv}></div>
+      </aside> */}
         <Post />
         <Post />
         <Post />
@@ -21,7 +21,6 @@ export default function Main() {
         <Post />
         <Post />
         <Post />
-      </section>
     </div>
   );
 }
