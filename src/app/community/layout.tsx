@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import CommunityMenu from './_component/CommunityMenu';
+
 import styles from './Community.module.css';
 
 type Props = {
