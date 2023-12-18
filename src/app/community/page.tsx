@@ -1,3 +1,5 @@
+import styles from './Community.module.css';
+
 export default function Page() {
-  return '커뮤니티';
+  return <div className={styles.container}>커뮤니티</div>;
 }

@@ -1,9 +1,9 @@
-
+import styles from './Recruit.module.css'
 
 export default function RecruitListPage() {
   return (
-    <div>
-      공고 리스트
+    <div className={styles.container}>
+      구인구직
     </div>
   )
 }

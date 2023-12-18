@@ -6,7 +6,7 @@ import 'dayjs/locale/ko';
 // import ActionButtons from '@/app/(afterLogin)/_component/ActionButtons';
 import PostArticle from './PostArticle';
 import { faker } from '@faker-js/faker';
-// import PostImages from './PostImages';
+import PostImage from './PostImage';
 
 dayjs.locale('ko');
 dayjs.extend(relativeTime);
@@ -55,7 +55,9 @@ export default function Post({ noImage }: Props) {
           </div>
         </div>
       </div>
-      <div>미리보기</div>
+      <div>
+        <PostImage post={target} />
+      </div>
     </PostArticle>
   );
 }
