@@ -1,20 +1,11 @@
 import styles from './Main.module.css';
-import Post from './Post';
+import PopPosts from './PopPosts';
 
 export default function Main() {
   return (
     <div className={styles.container}>
       <h3>인기글</h3>
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
+      <PopPosts />
     </div>
   );
 }

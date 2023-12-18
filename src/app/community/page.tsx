@@ -1,5 +1,5 @@
-import styles from './Community.module.css';
+import Post from '../_component/Post';
 
 export default function Page() {
-  return <div className={styles.container}>커뮤니티</div>;
+  return <Post />;
 }
