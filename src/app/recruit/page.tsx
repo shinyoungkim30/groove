@@ -1,9 +1,5 @@
-import styles from './Recruit.module.css'
+import Post from '../_component/Post';
 
 export default function RecruitListPage() {
-  return (
-    <div className={styles.container}>
-      구인구직
-    </div>
-  )
+  return <Post />;
 }
