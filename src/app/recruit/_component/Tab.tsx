@@ -17,7 +17,7 @@ export default function Tab() {
     setTab('employ');
   };
   const onClickProject = () => {
-    setTab('Project');
+    setTab('project');
   };
 
   return (
@@ -26,9 +26,41 @@ export default function Tab() {
         {tab === 'all' && (
           <>
             <div className={styles.tabIndicator} onClick={onClickAll}>
-              최신글
+              전체
             </div>
-            <div onClick={onClickBand}>인기글</div>
+            <div onClick={onClickBand}>팀원 모집</div>
+            <div onClick={onClickEmploy}>채용</div>
+            <div onClick={onClickProject}>프로젝트</div>
+          </>
+        )}
+        {tab === 'band' && (
+          <>
+            <div onClick={onClickAll}>전체</div>
+            <div className={styles.tabIndicator} onClick={onClickBand}>
+              팀원 모집
+            </div>
+            <div onClick={onClickEmploy}>채용</div>
+            <div onClick={onClickProject}>프로젝트</div>
+          </>
+        )}
+        {tab === 'employ' && (
+          <>
+            <div onClick={onClickAll}>전체</div>
+            <div onClick={onClickBand}>팀원 모집</div>
+            <div className={styles.tabIndicator} onClick={onClickEmploy}>
+              채용
+            </div>
+            <div onClick={onClickProject}>프로젝트</div>
+          </>
+        )}
+        {tab === 'project' && (
+          <>
+            <div onClick={onClickAll}>전체</div>
+            <div onClick={onClickBand}>팀원 모집</div>
+            <div onClick={onClickEmploy}>채용</div>
+            <div className={styles.tabIndicator} onClick={onClickProject}>
+              프로젝트
+            </div>
           </>
         )}
       </div>

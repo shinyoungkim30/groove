@@ -4,6 +4,7 @@ import './globals.css';
 import { ReactNode } from 'react';
 import styles from './layout.module.css';
 import Link from 'next/link';
+import NavMenu from './_component/NavMenu';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -57,8 +58,7 @@ export default function RootLayout({ children, modal }: Props) {
             </div>
             <div className={styles.navMenuPadding}>
               <div className={styles.navMenu}>
-                <Link href="/community">커뮤니티</Link>
-                <Link href="/recruit">구인구직</Link>
+                <NavMenu />
               </div>
             </div>
             <hr />
